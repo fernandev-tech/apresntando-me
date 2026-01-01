@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f3f3;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Imagem */
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Caixa imagem + texto */
+.img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  max-width: 600px;   /* RESPONSIVO */
+  margin: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 3px 15px lightblue;
+  padding: 20px;
+}
+
+/* Texto */
+.img-text p {
+  flex: 1;          /* CORRETO */
+  text-align: justify;
+}
+
+.intr-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Footer NORMAL (correto) */
+footer {
+  footer {
+    background: #0033cc;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Redes sociais */
+.social {
+    margin: 15px 0;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.author{
+   font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+}
+@media (max-width: 600px) {
+  .img-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
